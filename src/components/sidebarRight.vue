@@ -20,7 +20,7 @@
     <ul>
       <li>
         <IconChevronRight stroke="1.5" @click="collapseRightBar"/>
-        <v-lazy-image src="/assets/img/bluedesk.png" alt="Placeholder" />
+        <v-lazy-image src="/DynamicWeb/assets/img/bluedesk.png" alt="Placeholder" />
       </li>
       <div class="devider"></div>
       <li>
