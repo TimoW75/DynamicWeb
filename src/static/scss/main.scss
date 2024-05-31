@@ -1,0 +1,131 @@
+@import 'base/variables';
+@import 'base/fontface';
+
+@import 'pages/home';
+
+@import 'components/sideBarLeft';
+@import 'components/sideBarRight';
+@import 'components/topBar';
+@import 'components/InPageSidebar';
+@import 'components/VisualEditor';
+@import 'components/Modal';
+
+@import 'components/formfields';
+
+@import 'components/AccordionGeneral';
+@import 'components/AccordionLayoutStyling';
+@import 'components/AccordionRowConfig';
+
+
+@import 'elements/ctaParagraph';
+@import 'elements/multiColumn';
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*{ 
+  scrollbar-width: 10px;
+  scrollbar-color: $secondary-gray #ffffff;
+  
+  &::-webkit-scrollbar-track
+  {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+    background-color: var(--text-secundair);
+    border-radius: 10px;
+  }
+}
+
+body {
+  background-color: $background;
+}
+
+.mainContentContainer {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 40px);
+}
+
+.devider{
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  border: 1.5px solid $surface;
+}
+button {
+  height: 34px;
+  border: none;
+  border-radius: $border-radius;
+  padding: 4px 14px;
+  cursor: pointer;
+  @include Button-text;
+}
+
+button.blueCta {
+  width: 82px;
+  height: 34px;
+  border: none;
+  background-color: $primary;
+  color: $on-surface-light;
+  border-radius: $border-radius;
+  padding: 4px 14px;
+  cursor: pointer;
+  @include Button-text;
+}
+button.btnWarning{
+  width: 82px;
+  height: 34px;
+  border: none;
+  background-color: $warning;
+  color: $on-surface-light;
+  border-radius: $border-radius;
+  padding: 4px 14px;
+  cursor: pointer;
+  @include Button-text;
+}
+button.btnHelp{
+  width: 82px;
+  height: 34px;
+  border: none;
+  background-color: $surface;
+  color: $on-surface-dark;
+  border-radius: $border-radius;
+  padding: 4px 14px;
+  cursor: pointer;
+  @include Button-text;
+}
+
+
+.tabler-icon-square-toggle-horizontal{
+  transform: rotateZ(-90deg);
+}
+
+.tabler-icon {
+  cursor: pointer;
+}
+
+.tabler-icon-trash {
+  background-color: $warning;
+  border-radius: $border-radius;
+  padding: 4px;
+  path {
+    stroke: $on-surface-light;
+  }
+}
+.tabler-icon.tabler-icon-pencil {
+  background-color: $primary;
+  border-radius: $border-radius;
+  padding: 4px;
+  path {
+    stroke: $on-surface-light;
+  }
+}
+
+.editTools {
+  gap: .25rem;
+  display: flex;
+  padding: 4px 0;
+}

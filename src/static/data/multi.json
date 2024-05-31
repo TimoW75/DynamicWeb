@@ -1,0 +1,112 @@
+[
+    {
+        "ParagraphId": 13926,
+        "MultiColumnHeader": [
+            {
+                "ParagraphHeader": "Test",
+                "HeaderStyle": "h2",
+                "VisualHeader": false
+            }
+        ],
+        "CTAButtonTemplate": [
+            {
+                "ButtonLink": "",
+                "Product": "",
+                "Template": ""
+            }
+        ],
+        "Height": "auto",
+        "MobileHeight": "auto",
+        "ImageHeight": "auto",
+        "Fullwidth": "False",
+        "Clickable": "False",
+        "CenterText": "items-start text-left",
+        "WrapElements": "nowrap",
+        "AnimateDuration": 0,
+        "AnimateDirection": "none",
+        "AnimateDelayColumns": "False",
+        "Tag": "",
+        "CssClass": "",
+        "BackgroundConfigurationID": "",
+        "ParagraphColumns": [
+            {
+                "ParagraphColumn": [
+                    {
+                        "Header": [
+                            {
+                                "ParagraphHeader": "header",
+                                "HeaderStyle": "h2",
+                                "VisualHeader": false
+                            }
+                        ],
+                        "Subheader": [
+                            {
+                                "ParagraphHeader": "subheader",
+                                "HeaderStyle": "h2",
+                                "VisualHeader": false
+                            }
+                        ],
+                        "Content": [
+                            {
+                                "Text": "<p>Lorum ipsum<\/p>\n"
+                            }
+                        ],
+                        "Button": [
+                            {
+                                "ButtonText": "Button",
+                                "ButtonLink": "Default.aspx?Id=10823",
+                                "Product": "",
+                                "ButtonConfigurationID": "11",
+                                "NewWindow": "False",
+                                "ButtonAriaLabel": "",
+                                "Template": "<a href='{{ ButtonLink }}' class='btn default-btn btn--11 btn__primar AdvancedGridButton' target='_self' >\r\n<span class='btn__text cta-paragraph__btn cta-paragraph__btn-label'>Button<\/span>\r\n<i class='btn__icon fa-chevron-right  cta-paragraph__btn-icon check'><\/i>\r\n<\/a>\r\n",
+                                "Stylesheet": ""
+                            }
+                        ],
+                        "ExtraButton": [
+                            {
+                                "ButtonText": "",
+                                "ButtonLink": "",
+                                "Product": "",
+                                "ButtonConfigurationID": "",
+                                "NewWindow": "False",
+                                "ButtonAriaLabel": "",
+                                "Template": "",
+                                "Stylesheet": ""
+                            }
+                        ],
+                        "Image": [
+                            {
+                                "dummyfield": "",
+                                "BackgroundSize": "bg-cover",
+                                "PositionX": "center",
+                                "PositionY": "center",
+                                "ImageUrl": "\/Files\/Images\/BS_Logo.png",
+                                "ImageAlt": ""
+                            }
+                        ],
+                        "Video": [
+                            {
+                                "ShowControls": false,
+                                "YoutubeLink": "",
+                                "AutoPlay": false,
+                                "Clean": false,
+                                "LoopVideo": false,
+                                "MuteAudio": false,
+                                "VimeoLink": ""
+                            }
+                        ],
+                        "Icon": [
+                            {
+                                "FaIcon": "",
+                                "FaIconSize": "medium"
+                            }
+                        ],
+                        "LargeDevices": "auto",
+                        "GridClasses": "grid-auto md-grid-auto lg-grid-auto"
+                    }
+                ]
+            }
+        ]
+    }
+]

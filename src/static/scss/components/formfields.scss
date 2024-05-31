@@ -1,0 +1,140 @@
+input,
+select {
+    background-color: $surface;
+    border-radius: $border-radius;
+    border: none;
+    flex-grow: 1;
+    padding: 8px 10px;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+select {
+    max-width: 150px;
+}
+
+input {
+    max-width: 200px;
+}
+
+textarea {
+    width: 100%;
+}
+
+.custum-file-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed $primary;
+    background-color: $background;
+    padding: .5rem;
+    border-radius: $border-radius;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    height: 1.4em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $background;
+    border: 1px solid $secondary-gray;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1em;
+    width: 1em;
+    border-radius: 5px;
+    top: 15%;
+    left: 10%;
+    background-color: $secondary-gray;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: $primary;
+    border: 1px solid $primary;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px $primary;
+}
+
+input:checked+.slider:before {
+    transform: translateX(1.6em);
+    background-color: #fff;
+}
+
+.radioOptions {
+    input {
+        display: none;
+
+    }
+
+    .radio-inputs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+        user-select: none;
+    }
+
+    .radio-input:checked+.radio-tile {
+        border-color: $primary;
+    }
+
+    .radio-input:checked+.radio-tile:before {
+        border-color: $primary;
+    }
+
+    .radio-tile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        min-height: 80px;
+        border-radius: 0.5rem;
+        border: 2px solid $surface;
+        background-color: $background;
+        transition: 0.15s ease;
+        cursor: pointer;
+        position: relative;
+    }
+    .radio-tile:hover {
+        border-color: $primary;
+    }
+    .radio-icon svg {
+        width: 2rem;
+        height: 2rem;    
+    }
+}

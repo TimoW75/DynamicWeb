@@ -1,0 +1,145 @@
+
+{
+    "Items": [
+        { 
+            "Name": "Header",
+            "SystemName": "Header",
+            "type": "Header"
+        },
+        {
+            "Name": "SubHeader",
+            "SystemName": "SubHeader",
+            "type": "SubHeader"
+        },
+        
+        {
+            "Name": "Image",
+            "SystemName": "Image",
+            "type": "Image"
+        },
+        {
+            "Name": "Content",
+            "SystemName": "Content",
+            "type": "Content"
+        }
+    ],
+    "Functions": [
+        {
+            "Name": "Button",
+            "SystemName": "Button",
+            "type": "Button",
+            "options": [
+                "Button-Red", "Button-Blue", "Button-Green"
+            ]
+        },
+        {
+            "Name": "ExtraButton",
+            "SystemName": "ExtraButton",
+            "type": "ExtraButton",
+            "options": [
+                "Button-Red", "Button-Blue", "Button-Green"
+            ]
+        }
+    ],
+    "Layout": [
+        {
+            "Name": "Height",
+            "SystemName": "Height",
+            "type": "text"
+        },
+        {
+            "Name": "Image Position",
+            "SystemName": "ImagePosition",
+            "type": "position",
+            "options": [
+                {
+                    "Icon": "IconBoxAlignLeft",
+                    "SystemName": "Left"
+                },
+                {
+                    "Icon": "IconBoxAlignRight",
+                    "SystemName": "Right"
+                },
+                {
+                    "Icon": "IconBoxAlignTop",
+                    "SystemName": "Top"
+                },
+                {
+                    "Icon": "IconBoxAlignBottom",
+                    "SystemName": "Bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Full Width",
+            "SystemName": "Fullwidth",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Clickable Block",
+            "SystemName": "Clickable",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Center Vertical",
+            "SystemName": "CenterVertical",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Image as Background",
+            "SystemName": "ImageAsBackground",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Parallax Image",
+            "SystemName": "ParallaxImage",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Background Configuration",
+            "SystemName": "BackgroundConfigurationID",
+            "type": "select",
+            "options": [
+                "Background-Red", "Background-Blue", "Background-Green"
+            ]
+        }  
+    ],
+    "Animate": [
+        {
+            "Name": "Animate Direction",
+            "SystemName": "AnimateDirection",
+            "type": "position",
+            "options": [
+                {
+                    "Icon": "IconBoxAlignLeft",
+                    "SystemName": "Left"
+                },
+                {
+                    "Icon": "IconBoxAlignRight",
+                    "SystemName": "Right"
+                },
+                {
+                    "Icon": "IconBoxAlignTop",
+                    "SystemName": "Top"
+                },
+                {
+                    "Icon": "IconBoxAlignBottom",
+                    "SystemName": "Bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Animate Duration",
+            "SystemName": "AnimateDuration",
+            "type": "text"
+        }
+        
+    ],
+    "System" : [
+        {
+            "Name": "Css Class",
+            "SystemName": "CssClass",
+            "type": "text"
+        }
+    ]
+}

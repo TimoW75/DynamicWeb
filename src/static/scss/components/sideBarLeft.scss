@@ -1,0 +1,27 @@
+.leftSidebar {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: $border;
+    z-index: 1;
+    position: relative;
+
+    ul, div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    li a, div{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+
+        p{
+            @include DW;
+        }
+    }
+}

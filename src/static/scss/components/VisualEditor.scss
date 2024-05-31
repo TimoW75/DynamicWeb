@@ -1,0 +1,256 @@
+.editor {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem .5rem;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+    position: relative;
+
+    .infoBar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 65.5px;
+        margin-bottom: 25px;
+        .infoBar, .top {
+            display: flex;
+            justify-content: space-between;
+        }
+        .showHeaderFooter{
+            display: flex;
+            gap: 0.25rem;
+        }
+        .tabs{
+            display: flex;
+            gap: .5rem;
+            a{
+                max-height: 36px;
+                padding: 8px;
+                border-radius: 0px 0px 8px 8px;
+                background-color: $highlight;
+                cursor: pointer;
+                display: flex;
+                width: fit-content;
+                justify-content: space-between;
+                align-items: center;
+                width: 180px;
+                p{
+                    @include Button-text;
+                    text-align: center;
+                }
+                &.active{
+                    background-color: $primary;
+                    color: $background;
+                }
+                .icon{
+                    display: flex;
+                    gap: 4px;
+                    align-items: center;
+                }
+            
+            }
+        }
+    }
+
+    &:has(.modal.true){
+        overflow: hidden;
+    }
+    .dragAndDrop {
+        flex-direction: column;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .AdvancedGrid {
+        position: relative;
+    }
+    
+    .AdvancedGrid.focus{
+        position: relative;
+        background-color: $surface;
+        border-radius: $border-radius;
+        .meta{
+            padding: .5rem;
+            display: flex;
+            justify-content: space-between;
+            input {
+                background-color: $background;
+            }
+            button {
+                background-color: $warning;
+                color: $background;
+            }
+        }
+
+        .AdvancedGridContainer{
+            width: 100%;
+            display: flex;
+            .nestedVisualColumns {
+                display: flex;
+                align-items: center;
+                padding: 0.5rem; 
+                width: 100%; 
+                .AdvancedGridColumnContainer{
+                    flex-basis: 100%;
+                    margin: 0 2px;
+                    padding: .5rem 0 1rem;
+                    min-height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .AdvancedGridColumn {
+                        padding: 1rem;
+                    }
+                    .colInfo{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .AdvancedGridColumn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        flex: 1;
+                        gap: .5rem;
+                        border: 2px dashed $primary;
+                        border-radius: $border-radius;
+                        background-color: $background;
+
+                        .AdvancedGridRow {
+                            width: 100%;
+                            .emptyRow{
+                                border: 2px dashed $primary;
+                                border-radius: $border-radius;
+                                display: flex;
+                                justify-content: center;
+                                min-height: 28px;
+                                svg{
+                                    display: none;
+                                    path{
+                                        stroke: $primary;
+                                    }
+                                }
+                                &:hover{
+                                    svg{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .plusIcon{
+                min-height: 100%;
+                display: flex;
+                align-items: center;
+                padding: .5rem;
+                svg{
+                    position: relative;
+                    background-color: $primary;
+                    border-radius: $border-radius;
+                    z-index: 2;
+                    path{
+                        stroke: $background;
+                    }
+                }
+            }
+        }      
+    }
+    .addElement{
+        height: 5px;
+        width: 96%;
+        border-radius: $border-radius;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        position: absolute;
+        margin: .68rem auto;
+        svg{
+            display: none;
+            top: -12px;
+            position: relative;
+            background-color: $primary;
+            border-radius: $border-radius;
+            z-index: 2;
+            path{
+                stroke: $background;
+            }
+        }
+        &:hover{
+            border: 3px solid $primary;
+            svg{
+                display: block;
+            }
+        }
+    }
+    
+}
+
+.editor .AdvancedGrid:not(.focus) {
+    .AdvancedGridContainer {
+        input, svg {
+            display: none;
+        }
+    }
+    &:hover{
+        border: 2px dashed $primary;
+        .meta {
+            display: flex;
+        }
+    }
+    .meta{
+        padding: .5rem;
+        display: none;
+        position: absolute;
+        right: -8px;
+        top: -20px;
+        .editTools {
+            position: relative;
+            z-index: 99;
+            background-color: $background;
+        }
+
+        input {
+            background-color: $background;
+            display: none;
+        }
+    }
+    .colInfo{
+        display: flex;
+        justify-content: space-between;
+        p {
+            display: none;
+        }
+    }
+    .AdvancedGridContainer{
+        width: 100%;
+        display: flex;
+        .nestedVisualColumns {
+            display: flex;
+            width: 100%; 
+            .AdvancedGridColumnContainer{
+                flex-basis: 100%;
+                display: flex;
+                flex-direction: column;
+                .AdvancedGridColumn {
+                    padding: 1rem;
+                }
+                .AdvancedGridColumn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    flex: 1;
+                    gap: .5rem;
+
+                    .AdvancedGridRow {
+                        width: 100%;
+            
+                    }
+                }
+            }
+        }
+    }
+}

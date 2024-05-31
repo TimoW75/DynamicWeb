@@ -1,0 +1,50 @@
+.rowConfiguration{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: $surface;
+    padding: 12px;
+}
+
+.rowConfig{
+    display: flex;
+    flex-direction: column;
+    background-color: $background;
+    border-radius: $border-radius;
+    border: 1.5px solid $secondary-gray;
+
+    .fullRow {
+        width: 100%;
+        border-bottom: 1.5px solid $secondary-gray;
+        display: flex;
+        justify-content: space-between;
+        &:last-of-type {
+            border-bottom: none;
+        }
+        &.add {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: $primary;
+            div {
+                color: $background;
+            }
+        }
+    }
+
+    .configRow{
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 12px;
+        p {
+            width: 200px;
+        }
+    }
+
+    .rowsInColumn{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

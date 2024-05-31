@@ -1,25 +1,37 @@
 {
-  "name": "back-end",
+  "name": "setup",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "nodemon server.js",
-    "sass": "node-sass --watch static/scss/app.scss static/css/app.css"
+    "dev": "vite ",
+    "start": "vite ",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "sh deploy.sh"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "homepage": "",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "body-parser": "^1.20.2",
-    "express": "^4.18.2",
-    "mongodb": "^6.3.0",
-    "multer": "^1.4.5-lts.1"
+    "@emailjs/browser": "^3.11.0",
+    "@tabler/icons-vue": "^3.2.0",
+    "@vueup/vue-quill": "^1.2.0",
+    "axios": "^1.6.3",
+    "sass": "^1.69.7",
+    "v-lazy-image": "^2.1.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "vuedraggable": "^4.1.0",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
-    "dotenv": "^16.3.1",
-    "nodemon": "^3.0.2"
+    "@rushstack/eslint-patch": "^1.8.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "prettier": "^3.2.5",
+    "vite": "^5.2.8",
+    "vite-bundle-visualizer": "^1.0.0",
+    "vite-plugin-sitemap": "^0.5.3",
+    "vite-plugin-vue-devtools": "^7.0.25"
   }
 }

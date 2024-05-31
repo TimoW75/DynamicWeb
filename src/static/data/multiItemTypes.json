@@ -1,0 +1,105 @@
+
+{
+
+    "MultiColumnHeader": [
+        {            
+            "Name": "Paragrap header",
+            "SystemName": "ParagraphHeader",
+            "type": "Header"
+
+        }
+    ],
+    "Layout": [
+        {
+            "Name": "Height",
+            "SystemName": "Height",
+            "type": "text"
+        },
+        {
+            "Name": "Mobile height",
+            "SystemName": "MobileHeight",
+            "type": "text"
+        },
+        {
+            "Name": "Full Width",
+            "SystemName": "Fullwidth",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Clickable Block",
+            "SystemName": "Clickable",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Center text",
+            "SystemName": "CenterText",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Wrap Elements",
+            "SystemName": "WrapElements",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Image as Background",
+            "SystemName": "ImageAsBackground",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Parallax Image",
+            "SystemName": "ParallaxImage",
+            "type": "checkbox"
+        },
+        {
+            "Name": "Background Configuration",
+            "SystemName": "BackgroundConfigurationID",
+            "type": "background",
+            "options": [
+                "Background Red", "Background Blue", "Background Green"
+            ]
+        }  
+    ],
+    "Animate": [
+        {
+            "Name": "Animate Direction",
+            "SystemName": "AnimateDirection",
+            "type": "position",
+            "options": [
+                {
+                    "Icon": "IconBoxAlignLeft",
+                    "SystemName": "Left"
+                },
+                {
+                    "Icon": "IconBoxAlignRight",
+                    "SystemName": "Right"
+                },
+                {
+                    "Icon": "IconBoxAlignTop",
+                    "SystemName": "Top"
+                },
+                {
+                    "Icon": "IconBoxAlignBottom",
+                    "SystemName": "Bottom"
+                }
+            ]
+        },
+        {
+            "Name": "Animate Duration",
+            "SystemName": "AnimateDuration",
+            "type": "text"
+        },
+        {
+            "Name": "Animate Delay Columns",
+            "SystemName": "AnimateDelayColumns",
+            "type": "checkbox"
+        }
+        
+    ],
+    "System" : [
+        {
+            "Name": "Css Class",
+            "SystemName": "CssClass",
+            "type": "text"
+        }
+    ]
+}

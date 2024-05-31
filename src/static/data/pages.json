@@ -1,0 +1,16 @@
+{
+    "pages": [
+        {
+            "pageId": 1,
+            "url": "/",
+            "title": "Home",
+            "pagetype": "Default"
+        },
+        {
+            "pageId": 2,
+            "url": "/Contact",
+            "title": "Contact",
+            "pagetype": "Default"
+        }
+    ]
+}

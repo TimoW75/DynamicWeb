@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Tango Sans;
+  src: url(/assets/fonts/tangosans/TangoSans.ttf); //BoldItalic
+  font-weight: normal;
+}
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(/assets/fonts/source-sans-pro/SourceSansPro-Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(/assets/fonts/source-sans-pro/SourceSansPro-Regular.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: Source Sans Pro;
+  src: url(/assets/fonts/source-sans-pro/SourceSansPro-Semibold.otf);
+  font-weight: 600;
+}
+
+@mixin Header-large {
+  font-family: Tango Sans;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: $on-surface-dark;
+
+}
+@mixin Header-small {
+  font-family: Tango Sans;
+  font-size: 1rem;
+  font-weight: normal;
+  color: $on-surface-dark;
+
+}
+@mixin Button-text {
+  font-family: Source Sans Pro;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+@mixin Body-text {
+  font-family: Source Sans Pro;
+  font-size: 1rem;
+  font-weight: normal;
+  color: $on-surface-dark;
+
+}
+@mixin Caption {
+  font-family: Source Sans Pro;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $on-surface-dark;
+}
+
+@mixin DW {
+  font-family: Source Sans Pro;
+  font-size: 0.625rem;
+  font-weight: normal;
+  color: $on-surface-dark;
+}
+
+h2 {
+  @include Header-large;
+}
+h3 {
+  @include Header-small();
+}
+button, a {
+  @include Button-text;
+  text-decoration: none;
+  color: $on-surface-dark;
+
+}
+p, div, span {
+  @include Body-text;
+}
+.caption {
+  @include Caption;
+}
+
+svg{
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: $on-surface-dark;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+}

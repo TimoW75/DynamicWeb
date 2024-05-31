@@ -1,0 +1,19 @@
+
+
+.topBar {
+    width: 100%;
+    background-color: $dw-blue;
+    z-index: 99;
+    position: relative;
+    .topHome{
+        width: 70px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $on-surface-dark;
+        svg {
+            stroke: $on-surface-light;
+        }
+    }
+}

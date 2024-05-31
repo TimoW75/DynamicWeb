@@ -1,0 +1,77 @@
+[
+    {
+        "Id": "1235",
+        "ItemInstanceType": "",
+        "ImageID": "3051",
+        "ButtonID": "5121",
+        "Sort": 0,
+        "Clickable": false,
+        "CenterVertical": false,
+        "Tag": "",
+        "HeaderID": "6828",
+        "SubHeaderID": "6829",
+        "ContentID": "3341",
+        "ImagePosition": "left",
+        "Fullwidth": false,
+        "BackgroundConfigurationID": "",
+        "CssClass": "",
+        "Height": 0,
+        "ImageAsBackground": false,
+        "ParallaxImage": false,
+        "AnimateDirection": "none",
+        "AnimateDuration": 0,
+        "ExtraButtonID": "5122",
+        "ButtonTemplate": "",
+        "ExtraButtonTemplate": "",
+        "CTAHeader": [
+            {
+                "ParagraphHeader": "",
+                "HeaderStyle": "h2",
+                "VisualHeader": false
+            }
+        ],
+        "CTASubHeader": [
+            {
+                "Subheader": "",
+                "SubheaderStyle": "h2",
+                "VisualSubheader": "False"
+            }
+        ],
+        "CTAContent": [
+            {
+                "Content": ""
+            }
+        ],
+        "CTAButton": [
+            {
+                "ButtonText": "",
+                "ButtonLink": "",
+                "ButtonAriaLabel": "",
+                "ButtonProduct": "",
+                "ButtonConfigurationID": "",
+                "ButtonNewWindow": "_self",
+                "Template": ""
+            }
+        ],
+        "CTAExtraButton": [
+            {
+                "ExtraButtonText": "",
+                "ExtraButtonLink": "",
+                "ExtraButtonAriaLabel": "",
+                "ExtraButtonProduct": "",
+                "ExtraButtonConfigurationID": "",
+                "ExtraButtonNewWindow": "False",
+                "Template": ""
+            }
+        ],
+        "CTAImage": [
+            {
+                "ImageUrl": "",
+                "ImageAlt": "",
+                "BackgroundSize": "bg-cover",
+                "ImagePositionX": "center",
+                "ImagePositionY": "center"
+            }
+        ]
+    }
+]

@@ -1,0 +1,90 @@
+
+.modal .modalContent .layoutAndStyling {
+    input, select{
+        background-color: $background;
+    }
+}
+
+.layoutAndStyling{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: $surface;
+    padding: 12px;
+    .col.backgroundPadding{
+        gap: 1.5rem;
+        > div {
+            flex-grow: 1;
+            flex-basis: 100%;
+        }
+    }
+    .widthMinMax{
+        max-width: 100px;
+    }
+    
+    .paddingRow{
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        justify-content: flex-start;
+        width: 90%;
+        .paddingCol {
+            display: flex;
+            align-items: center;
+            flex-basis: 45%;
+            gap: .75rem;
+            input {
+                max-width: 150px;
+            }
+            p{
+                width: 50px;
+            }
+
+        }
+
+    }
+
+    .paddingFlexOptions{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .paddingOptions{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+        .flexOptions{
+            gap: .75rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .flexOption{
+            display: flex;
+            flex-direction: row;
+            gap: .75rem;
+        }
+    }
+
+    .col, .row{
+        display: flex;
+        gap: .25rem
+    }
+    .col{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .row{
+        flex-direction: column;
+        gap: 1.5rem;
+        > div {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+    }
+
+
+    button.blueCta {
+        width: fit-content;
+    }
+}

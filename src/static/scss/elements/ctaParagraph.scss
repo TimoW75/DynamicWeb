@@ -1,0 +1,37 @@
+.ctaParagraph{
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+    > div {
+        flex-basis: 50%;
+    }
+    .buttons{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .ctaButton{
+        padding: 1rem 1.5rem;
+        border: 1px solid black;
+        width: fit-content;
+        border-radius: $border-radius;
+        &.Button-Blue {
+            background-color: lightblue;
+        }
+        &.Button-Red {
+            background-color: lightcoral;
+        }
+        &.Button-Green {
+            background-color: lightgreen;
+        }
+    }
+    .editTools {
+        position: absolute;
+        right: 0;
+    }
+}
