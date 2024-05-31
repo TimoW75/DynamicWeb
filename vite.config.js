@@ -20,6 +20,5 @@ export default defineConfig({
     chunkSizeWarningLimit: 600,
     cssCodeSplit: false
   },
-  publicDir: "/DynamicWeb/",
   base: "/DynamicWeb/",
 })
