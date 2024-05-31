@@ -20,13 +20,6 @@ export default defineConfig({
     chunkSizeWarningLimit: 600,
     cssCodeSplit: false
   },
-  server: {
-    proxy: {
-      "/api": {
-        target: "http://localhost:8000",
-        changeOrigin: true,
-        secure: false,
-      },
-    },
-  },
+  publicDir: "/DynamicWeb/",
+  base: "/DynamicWeb/",
 })
