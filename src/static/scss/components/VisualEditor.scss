@@ -167,6 +167,7 @@
         z-index: 1;
         position: absolute;
         margin: .68rem auto;
+        border: 3px solid $on-surface-disabled;
         svg{
             display: none;
             top: -12px;
