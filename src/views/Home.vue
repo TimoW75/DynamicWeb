@@ -7,7 +7,7 @@
 <template>
 
   <section class="mainContent">
-    Editor
+
     <section class="editor">
 
       <InfoBar />
